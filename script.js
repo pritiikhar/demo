@@ -75,7 +75,7 @@ if(isModifierKey(event)) {return;}
     else if(input.length > 0){target.value = `(${zip}`;}
 
 mobOptr();
-stateName();
+displayStateName();
     
     if(value.length == 14){
  document.getElementById("erroR").innerHTML = "";
