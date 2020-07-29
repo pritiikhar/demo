@@ -63,17 +63,9 @@ if(isModifierKey(event)) {return;}
 }
     else if(input.length > 0){target.value = `(${zip}`;}
 
-mobOptr();
 stateName();
     
-    if(value.length == 14){
- document.getElementById("erroR").innerHTML = "";
- document.getElementById("submit").disabled = false; 
-}
-else{
-document.getElementById("erroR").innerHTML = "Enter a valid 10 digit  mobile number";
-document.getElementById("submit").disabled = true; 
-}
+    
 };
 
 //Name Validation
@@ -122,9 +114,9 @@ const name = document.getElementById('name');
 name.addEventListener('keydown',formatName);
 name.addEventListener('keyup',formatToName);
 
-//------------------------------------------------------------------------------------------------------------------
-function mobOptr(){
-if(620 < zip && zip < 800){
+//---------------------------------------------------------------------------------------------------------------------
+function stateName(){
+ if(620 < zip && zip < 800){
  document.getElementById("comLogo").style.display = "inline-block";
  document.getElementById("comLogo").src = "jio.png";
  document.getElementById("error").innerHTML = " ";
@@ -139,17 +131,7 @@ else if(920 < zip && zip < 1000){
  document.getElementById("comLogo").src = "vodafone.png";
  document.getElementById("error").innerHTML = " ";
 }
-else {
-document.getElementById("comLogo").style.display = "none";
-document.getElementById("error").style.display = "block";
-document.getElementById("error").innerHTML = "*Invalid Mobile Number";
-
-}
-}
-
-//---------------------------------------------------------------------------------------------------------------------
-function stateName(){
- if(middle == 100){
+ else if(middle == 100){
  document.getElementById("p").innerHTML = "Andhra Pradesh";
  document.getElementById("error").style.display = "none";
  document.getElementById("submit").disabled = false;
@@ -329,12 +311,20 @@ document.getElementById("p").innerHTML = "Puducherry";
 document.getElementById("error").style.display = "none";
 document.getElementById("submit").disabled = false;
 }
+else if(value.length == 14){
+ document.getElementById("erroR").innerHTML = "";
+ document.getElementById("submit").disabled = false; 
+}
 else {
+document.getElementById("erroR").innerHTML = "Enter a valid 10 digit  mobile number";
 document.getElementById("comLogo").style.display = "none";
 document.getElementById("error").innerHTML = "*Invalid Mobile Number";
 document.getElementById("p").innerHTML = "";
 document.getElementById("error").style.display = "block";
 document.getElementById("submit").disabled = true;
+document.getElementById("comLogo").style.display = "none";
+document.getElementById("error").style.display = "block";
+document.getElementById("error").innerHTML = "*Invalid Mobile Number";
 }
 }
 
