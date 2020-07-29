@@ -66,17 +66,17 @@ if(isModifierKey(event)) {return;}
 if(620 < zip && zip < 800){
  document.getElementById("comLogo").style.display = "inline-block";
  document.getElementById("comLogo").src = "jio.png";
- document.getElementById("error").innerHTML = " ";
+ document.getElementById("errOR").innerHTML = " ";
 }
 else if(800 < zip && zip < 919){
  document.getElementById("comLogo").style.display = "inline-block";
  document.getElementById("comLogo").src = "idea.png";
- document.getElementById("error").innerHTML = " ";
+ document.getElementById("errOR").innerHTML = " ";
 }
 else if(920 < zip && zip < 1000){
  document.getElementById("comLogo").style.display = "inline-block";
  document.getElementById("comLogo").src = "vodafone.png";
- document.getElementById("error").innerHTML = " ";
+ document.getElementById("errOR").innerHTML = " ";
 }
  else if(middle == 100){
  document.getElementById("p").innerHTML = "Andhra Pradesh";
@@ -272,6 +272,7 @@ document.getElementById("submit").disabled = true;
 document.getElementById("comLogo").style.display = "none";
 document.getElementById("error").style.display = "block";
 document.getElementById("error").innerHTML = "*Invalid Mobile Number";
+document.getElementById("errOR").innerHTML = "Starting 3 digits are invalide.";
 }
     
     
