@@ -1,0 +1,58 @@
+<!docktype html>
+<html>
+<head>
+<title> Form </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Registration Form</h1>
+<div id ="formDiv">
+<form id = "form"> 
+<table>
+<tr><td><label for="name">Full Name</label></td>
+<td><input id="name" required /></td> </tr> 
+
+
+<tr><td><label for="name">Email</label></td>
+<td><input id="email" type = "email" required/> </td> <tr>
+<tr> 
+
+
+<td><label for="mobileNum" name = "mobile">Mobile Number</label></td>
+<td><input id="phoneNumber" required type = "text" maxlength = "14"/></td>   
+<td><img id="comLogo" src="" width="107" height="98" style = "display:none; width:7%; height:7%; padding:0px">
+<p id = "p" style = "display:inline" > </p> </td></tr>
+</table>
+
+<div id = "buttons">
+<button type="submit" id = "submit" >Submit</button>
+<button type="reset" id = "reset" >Reset</button></div>
+
+<div id = "errorMassege">
+<p id = "NameError"></p>
+<p id = "Name_Error"></p>
+<p id = "error"></p>
+<p id = "erroR"></p> 
+ </div>
+</form>
+
+<p id="otp1"></p>
+</div>
+<h2 id = "note">Guidelines</h2>
+<p id = "note">Use 25+ number to change the state code, starting from 100.<br>
+Eg. 100, 125, 150, 175, 200, 225, etc. Numbers in these formats are valide. All other numbers are invalid.<br><br>
+After submitting this form you will be redirected to the OTP validation page and the new tab will open. 
+Just becouse I have not used a web API here, you will have to select the Form page's tab from  your browser where 
+you will find the system generated OTP. After following this you will be able copy the OTP and 
+paste it to the OTP field of newly opened tab.<br><br>
+ 
+</p>
+
+
+
+<script src = "script.js">
+</script>
+
+</body>
+<html>
