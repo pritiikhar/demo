@@ -1,3 +1,14 @@
+let stateName = [];
+//Adding States name to stateName array with index------------------------------------------------------------------------------------------------------------------------------------
+stateName[100] = 'Andhra Pradesh', stateName[125] = 'Arunachal Pradesh', stateName[150] = 'Assam', stateName[175] = 'Bihar', stateName[200] = 'Chhattisgarh',
+stateName[225] = 'Goa', stateName[250] = 'Gujarat', stateName[275] = 'Haryana', stateName[300] = 'Himachal Pradesh', stateName[325] = 'Jharkhand', stateName[350] = 'Karnataka', 
+stateName[375] = 'Kerala', stateName[400] = 'Madhya Pradesh', stateName[425] = 'Maharashtra', stateName[450] = 'Manipur', stateName[475] = 'Meghalaya', stateName[500] = 'Mizoram', 
+stateName[525] = 'Nagaland', stateName[550] = 'Odisha', stateName[575] = 'Punjab', stateName[600] = 'Rajasthan', stateName[625] = 'Sikkim', stateName[650] = 'Tamil Nadu', 
+stateName[675] = 'Telangana', stateName[700] = 'Tripura', stateName[725] = 'Uttar Pradesh', stateName[750] = 'Uttarakhand', stateName[775] = 'West Bengal', 
+stateName[800] = 'Andaman and Nicobar', stateName[825] = 'Chandigarh', stateName[850] = 'Daman and Diu & Dadar and Nagar Haveli', stateName[875] = 'Delhi', 
+stateName[900] = 'Jammu and Kashmir', stateName[925] = 'Ladakh', stateName[950] = 'Lakshadweep', stateName[975] = 'Puducherry';
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 const isNumericInput = (event) => {
     const key = event.keyCode;
     return ((key >= 48 && key <= 57) || // Allow number line
@@ -63,219 +74,17 @@ if(isModifierKey(event)) {return;}
 }
     else if(input.length > 0){target.value = `(${zip}`;}
 
-if(620 < zip && zip < 800){
- document.getElementById("comLogo").style.display = "inline-block";
- document.getElementById("comLogo").src = "jio.png";
- document.getElementById("errOR").innerHTML = " ";
-}
-else if(800 < zip && zip < 919){
- document.getElementById("comLogo").style.display = "inline-block";
- document.getElementById("comLogo").src = "idea.png";
- document.getElementById("errOR").innerHTML = " ";
-}
-else if(920 < zip && zip < 1000){
- document.getElementById("comLogo").style.display = "inline-block";
- document.getElementById("comLogo").src = "vodafone.png";
- document.getElementById("errOR").innerHTML = " ";
-}
- else if(middle == 100){
- document.getElementById("p").innerHTML = "Andhra Pradesh";
- document.getElementById("error").style.display = "none";
- document.getElementById("submit").disabled = false;
-}
-else if(middle == 125){
-document.getElementById("p").innerHTML = "Arunachal Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 150){
-document.getElementById("p").innerHTML = "Assam";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 175){
-document.getElementById("p").innerHTML = "Bihar";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 200){
-document.getElementById("p").innerHTML = "Chhattisgarh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 225){
-document.getElementById("p").innerHTML = "Goa";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 250){
-document.getElementById("p").innerHTML = "Gujrat";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 275){
-document.getElementById("p").innerHTML = "Haryana";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 300){
-document.getElementById("p").innerHTML = "Himachal Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 325){
-document.getElementById("p").innerHTML = "Jharkhand";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 350){
-document.getElementById("p").innerHTML = "Karnataka";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 375){
-document.getElementById("p").innerHTML = "Kerala";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 400){
-document.getElementById("p").innerHTML = "Madhya Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 425){
-document.getElementById("p").innerHTML = "Maharashtra";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 450){
-document.getElementById("p").innerHTML = "Manipur";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 475){
-document.getElementById("p").innerHTML = "Meghalaya";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 500){
-document.getElementById("p").innerHTML = "Mizoram";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 525){
-document.getElementById("p").innerHTML = "Nagaland";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 550){
-document.getElementById("p").innerHTML = "Odisha";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 575){
-document.getElementById("p").innerHTML = "Punjab";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 600){
-document.getElementById("p").innerHTML = "Rajasthan";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 625){
-document.getElementById("p").innerHTML = "Sikkim";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 650){
-document.getElementById("p").innerHTML = "Tamil Nadu";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 675){
-document.getElementById("p").innerHTML = "Telangana";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 700){
-document.getElementById("p").innerHTML = "Tripura";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 725){
-document.getElementById("p").innerHTML = "Uttar Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 750){
-document.getElementById("p").innerHTML = "Uttarakhand";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 775){
-document.getElementById("p").innerHTML = "West Bengal";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 800){
-document.getElementById("p").innerHTML = "Andaman and Nicobar Islands";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 825){
-document.getElementById("p").innerHTML = "Chandigarh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 850){
-document.getElementById("p").innerHTML = "Dadra and Nagar Haveli and Daman and Diu";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 875){
-document.getElementById("p").innerHTML = "Delhi";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 900){
-document.getElementById("p").innerHTML = "Jammu and Kashmir";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 925){
-document.getElementById("p").innerHTML = "Ladakh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 950){
-document.getElementById("p").innerHTML = "Lakshadweep";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 975){
-document.getElementById("p").innerHTML = "Puducherry";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(value.length == 14){
+mobOptr();
+stateName();
+    
+    if(value.length == 14){
  document.getElementById("erroR").innerHTML = "";
  document.getElementById("submit").disabled = false; 
 }
-else {
+else{
 document.getElementById("erroR").innerHTML = "Enter a valid 10 digit  mobile number";
-document.getElementById("comLogo").style.display = "none";
-document.getElementById("error").innerHTML = "*Invalid Mobile Number";
-document.getElementById("p").innerHTML = "";
-document.getElementById("error").style.display = "block";
-document.getElementById("submit").disabled = true;
-document.getElementById("comLogo").style.display = "none";
-document.getElementById("error").style.display = "block";
-document.getElementById("error").innerHTML = "*Invalid Mobile Number";
-document.getElementById("errOR").innerHTML = "Starting 3 digits are invalide.";
+document.getElementById("submit").disabled = true; 
 }
-    
-    
 };
 
 //Name Validation
@@ -324,9 +133,9 @@ const name = document.getElementById('name');
 name.addEventListener('keydown',formatName);
 name.addEventListener('keyup',formatToName);
 
-//---------------------------------------------------------------------------------------------------------------------
-function stateName(){
- if(620 < zip && zip < 800){
+//------------------------------------------------------------------------------------------------------------------
+function mobOptr(){
+if(620 < zip && zip < 800){
  document.getElementById("comLogo").style.display = "inline-block";
  document.getElementById("comLogo").src = "jio.png";
  document.getElementById("error").innerHTML = " ";
@@ -341,200 +150,18 @@ else if(920 < zip && zip < 1000){
  document.getElementById("comLogo").src = "vodafone.png";
  document.getElementById("error").innerHTML = " ";
 }
- else if(middle == 100){
- document.getElementById("p").innerHTML = "Andhra Pradesh";
- document.getElementById("error").style.display = "none";
- document.getElementById("submit").disabled = false;
-}
-else if(middle == 125){
-document.getElementById("p").innerHTML = "Arunachal Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 150){
-document.getElementById("p").innerHTML = "Assam";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 175){
-document.getElementById("p").innerHTML = "Bihar";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 200){
-document.getElementById("p").innerHTML = "Chhattisgarh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 225){
-document.getElementById("p").innerHTML = "Goa";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 250){
-document.getElementById("p").innerHTML = "Gujrat";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 275){
-document.getElementById("p").innerHTML = "Haryana";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 300){
-document.getElementById("p").innerHTML = "Himachal Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 325){
-document.getElementById("p").innerHTML = "Jharkhand";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 350){
-document.getElementById("p").innerHTML = "Karnataka";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 375){
-document.getElementById("p").innerHTML = "Kerala";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 400){
-document.getElementById("p").innerHTML = "Madhya Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 425){
-document.getElementById("p").innerHTML = "Maharashtra";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 450){
-document.getElementById("p").innerHTML = "Manipur";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 475){
-document.getElementById("p").innerHTML = "Meghalaya";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 500){
-document.getElementById("p").innerHTML = "Mizoram";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 525){
-document.getElementById("p").innerHTML = "Nagaland";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 550){
-document.getElementById("p").innerHTML = "Odisha";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 575){
-document.getElementById("p").innerHTML = "Punjab";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 600){
-document.getElementById("p").innerHTML = "Rajasthan";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 625){
-document.getElementById("p").innerHTML = "Sikkim";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 650){
-document.getElementById("p").innerHTML = "Tamil Nadu";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 675){
-document.getElementById("p").innerHTML = "Telangana";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 700){
-document.getElementById("p").innerHTML = "Tripura";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 725){
-document.getElementById("p").innerHTML = "Uttar Pradesh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 750){
-document.getElementById("p").innerHTML = "Uttarakhand";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 775){
-document.getElementById("p").innerHTML = "West Bengal";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 800){
-document.getElementById("p").innerHTML = "Andaman and Nicobar Islands";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 825){
-document.getElementById("p").innerHTML = "Chandigarh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 850){
-document.getElementById("p").innerHTML = "Dadra and Nagar Haveli and Daman and Diu";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 875){
-document.getElementById("p").innerHTML = "Delhi";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 900){
-document.getElementById("p").innerHTML = "Jammu and Kashmir";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 925){
-document.getElementById("p").innerHTML = "Ladakh";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 950){
-document.getElementById("p").innerHTML = "Lakshadweep";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(middle == 975){
-document.getElementById("p").innerHTML = "Puducherry";
-document.getElementById("error").style.display = "none";
-document.getElementById("submit").disabled = false;
-}
-else if(value.length == 14){
- document.getElementById("erroR").innerHTML = "";
- document.getElementById("submit").disabled = false; 
-}
 else {
-document.getElementById("erroR").innerHTML = "Enter a valid 10 digit  mobile number";
-document.getElementById("comLogo").style.display = "none";
-document.getElementById("error").innerHTML = "*Invalid Mobile Number";
-document.getElementById("p").innerHTML = "";
-document.getElementById("error").style.display = "block";
-document.getElementById("submit").disabled = true;
 document.getElementById("comLogo").style.display = "none";
 document.getElementById("error").style.display = "block";
 document.getElementById("error").innerHTML = "*Invalid Mobile Number";
+
+}
+}
+
+//---------------------------------------------------------------------------------------------------------------------
+function displayStateName(){
+    if(stateName[middle] === undefined ){
+document.getElementById("stateName").innerHTML = "Invalide number";
 }
 }
 
